@@ -5,3 +5,7 @@
     background-color: purple;
     display: inline;
 }
+.sclass1 {
+    background-color: blue;
+    display: inline-block;
+}
