@@ -15,31 +15,28 @@
 .header-cont {
     grid-area: header;
     background-image: url("Images/Tennis-court2.png");
-    justify-content: center;
 }
 
 .menu-cont {
     grid-area: menu;
     background-color: aqua;
-    justify-content: center;
-}
+    background-image: url("Images/Tennis-player1.jpg");
+    background-repeat: repeat-y;
+    }
 
 .main-cont {
     grid-area: main;
     background-color: antiquewhite;
-    justify-content: center;
 }
 
 .ad-cont {
     grid-area: ad;
     background-color: coral;
-    justify-content: center;
 }
 
 .footer-cont {
     grid-area: footer;
     background-color: darkgoldenrod;
-    justify-content: center;
 }
 
 main {
