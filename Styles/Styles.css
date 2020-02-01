@@ -17,6 +17,12 @@
     grid-template-rows: 10% 60% 30%;
 }
 
+#header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .menu-cont {
     grid-area: menu;
 }
