@@ -14,6 +14,7 @@
 
 .header-cont {
     grid-area: header;
+    font-family: "Times New Roman", Times, serif;
     background-image: url("Images/Tennis-court2.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
