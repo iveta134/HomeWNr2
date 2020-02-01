@@ -10,7 +10,7 @@
         "menu"
         "main"
         "footer";
-    background-image: url("Images/Tennis-player1.jpg");
+    
 }
 
 .header-cont {
@@ -23,28 +23,22 @@
 
 .menu-cont {
     grid-area: menu;
-    background-color: aqua;
-    background-image: url("Images/Tennis-player1.jpg" alt"Tenisa spēlētāji");
-    background-repeat: repeat-y;
-    }
+}
 
 .main-cont {
     grid-area: main;
-    background-color: antiquewhite;
 }
 
 .ad-cont {
     grid-area: ad;
-    background-image: url("Images/dream-team-logo.png");
     width: 300px;
-  border: 5px solid green;
+  border: 5px solid blue;
   padding: 20px;
-  margin: 40px;
+  margin: 10px;
 }
 
 .footer-cont {
     grid-area: footer;
-    background-color: darkgoldenrod;
 }
 
 main {
@@ -68,7 +62,6 @@ main {
             "header header header"
             "menu main ad"
             "footer footer footer";
-        background-image: url("Images/Tennis-court3.png") ;
     }
 }
 
@@ -82,4 +75,9 @@ main {
             "footer footer ad";
         background-color: rgb(218, 177, 177);
     }
+}
+
+.dreamteam-name {
+    font-family: fantasy;
+    font-size: 40px;
 }
