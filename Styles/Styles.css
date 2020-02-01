@@ -10,22 +10,21 @@
         "menu"
         "main"
         "footer";
+    background-image: url("Images/Tennis-player1.jpg");
 }
 
 .header-cont {
     grid-area: header;
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Jazz LET, fantasy";
     font-size: xx-large;
-    background-image: url("Images/Tennis-court2.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    
+
 }
 
 .menu-cont {
     grid-area: menu;
     background-color: aqua;
-    background-image: url("Images/Tennis-player1.jpg");
+    background-image: url("Images/Tennis-player1.jpg" alt"Tenisa spēlētāji");
     background-repeat: repeat-y;
     }
 
