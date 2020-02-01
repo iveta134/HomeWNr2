@@ -17,10 +17,9 @@
     grid-template-rows: 10% 60% 30%;
 }
 
-#header {
+header {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .menu-cont {
