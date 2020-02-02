@@ -1,37 +1,48 @@
 .outer-container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     /* grid-template-rows: 100px 1fr 3fr 1fr 100px; */
     height: 95vh;
-    grid-template-rows: 100px 1fr 3fr 1fr 100px;
+    grid-template-rows: auto;
     grid-template-areas:
-        "header"
-        "nav"
-        "tools"
-        "hero"
-        "main"
-        "ad"
-        "footer";
+        "logo logo "
+        "nav tools"
+        "hero hero "
+        "main main "
+        "ad ad "
+        "footer footer";
 }
 
-.header-cont {
-    grid-area: header;
+.logo-cont {
+    grid-area: logo;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;  
 }
+
 .header-tools {
     grid-area: tools;
-}
-.global nav {
-    grid-area: nav;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+.global-nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    color: silver;
+}
+
 header {
     display: flex;
     justify-content: space-between;
+    background-color: teal;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    grid-template-rows: 200px 50px;
+    grid-template-columns: 60% 40%;
 }
 
 .hero-cont {
@@ -71,8 +82,8 @@ main {
         grid-template-columns: 100px 1fr 100px;
         grid-template-rows: 100px auto 100px;
         grid-template-areas:
-            "header header header"
-            "menu main ad"
+            "logo nav tools"
+            "hero main ad"
             "footer footer footer";
             background-color: rgb(188, 177, 218);
     }
@@ -83,8 +94,8 @@ main {
         grid-template-columns: 100px 1fr 100px;
         grid-template-rows: 100px auto 100px;
         grid-template-areas:
-            "header header header"
-            "menu main ad"
+            "logo nav tools"
+            "hero main ad"
             "footer footer ad";
         background-color: rgb(218, 177, 177);
     }
@@ -106,20 +117,14 @@ main {
     padding-top: 0.3cm;
     padding-right: 0.3cm;
 }
-.global-nav {
-    font-size: 17px;
-    color: silver;
-    display: block;
-    height: 40px;
-    float: left;
-    margin: 0 1px 0 0;
-    padding: 20px 7px 0 7px;
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 .ul-navlist {
     color: springgreen;
     padding: 0;
+}
+header-cont {
+    align-content: center;
+}
+section {
+    display: block;
 }
