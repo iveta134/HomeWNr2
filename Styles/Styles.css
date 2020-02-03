@@ -34,26 +34,35 @@
 
 .hero-cont {
     grid-area: hero;
+    background-color: aquamarine
 }
 
 .hero-action {
     grid-area: heroact;
+    background-color: aquamarine;
 }
 
 .main-article {
     grid-area: main;
+    background-color: darkcyan;
 }
 
 .main-cont {
-    grid-area: mainli
+    grid-area: mainli;
 }
 
 .ad-cont {
     grid-area: ad;
 }
 
+.sidebar {
+    grid-area: sideb;
+    background-color: rgb(29, 184, 50)69, 169;
+}
+
 .footer-cont {
     grid-area: footer;
+    background-color: darkgray;
 }
 
 
