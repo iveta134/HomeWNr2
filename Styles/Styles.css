@@ -80,7 +80,7 @@
         }
     .logo-cont {
         grid-area: logo;
-       
+       padding-left: 4cm;
     }
     .global-nav {
         grid-area: nav;
@@ -97,19 +97,21 @@
     }
     .ad-cont {
         grid-area: ad;
-
+        padding-right: 3cm;
     }
     .footer-cont {
         grid-area: footer;
     }
     .main-article {
         grid-area: main;
+        padding-left: 4cm;
     }
     .main-cont {
         grid-area: mainli;
     }
     .sidebar {
         grid-area: sideb;
+        padding-left: 117px;
     }
 }
 
@@ -140,6 +142,7 @@
     }
     .ad-cont {
         grid-area: ad;
+        place-self: center;
     }
     .footer-cont {
         grid-area: footer;
