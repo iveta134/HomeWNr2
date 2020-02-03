@@ -3,7 +3,7 @@
     grid-template-columns: 50% 50%;
     height: 95vh;
     text-align: center;
-    grid-template-rows: 15% 15% 10% 10% 25% 22% 3%;
+    grid-template-rows: 15% 12% 8% 12% 20% 25% 3%;
     grid-template-areas:
         "logo logo"
         "nav tools"
@@ -22,29 +22,19 @@
 
 .header-tools {
     grid-area: tools;
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
     background-color: teal;
     
 }
 
 .global-nav {
     grid-area: nav;
-    grid-row: 2 / 3;
-    grid-column: 1 / 2;
     background-color: teal;
-}
-
-header {
-    grid-column: 1/3;
-    background-color: teal;
-    width: 100%;
-    grid-row: 1/2;
 }
 
 .hero-cont {
     grid-area: hero;
 }
+
 .hero-action {
     grid-area: heroact;
 }
@@ -53,55 +43,51 @@ header {
     grid-area: main;
 }
 
-.main-inner-cont {
+.main-cont {
     grid-area: mainli
 }
+
 .ad-cont {
     grid-area: ad;
-    padding: 20px;
-    margin: 10px;
 }
 
 .footer-cont {
     grid-area: footer;
 }
 
-main {
-    width: 75%;
-    height: 30%;
-    align-self: center;
-}
 
 .main-inner-cont {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+    font-size: 10px;
 }
 
 @media (min-width: 576px) {
     .outer-container {
-        grid-template-columns: 30% 40% 30%;
-        grid-template-rows: 10% 10% 8% 20% 30% 17% 5%;
+        grid-template-columns: 35% 15% 15% 35%;
+        grid-template-rows: 15% 10% 8% 15% 30% 17% 5%;
         grid-template-areas:
-            "logo nav tools"
-            "hero hero hero"
-            "heroact heroact heroact"
-            "main main ad"
-            "mainli mainli mainli"
-            "sideb sideb sideb"
-            "footer footer footer";
-            background-color: rgb(188, 177, 218);
-
+            "logo nav nav tools"
+            "hero hero hero hero"
+            "heroact heroact heroact heroact"
+            "main main main ad"
+            "mainli mainli mainli mainli"
+            "sideb sideb sideb sideb"
+            "footer footer footer footer";
+           
         }
     .logo-cont {
         grid-area: logo;
+       
     }
     .global-nav {
         grid-area: nav;
     }
     .header-tools {
         grid-area: tools;
+        justify-self: start;
     }
     .hero-cont {
         grid-area: hero;
@@ -111,14 +97,15 @@ main {
     }
     .ad-cont {
         grid-area: ad;
+
     }
     .footer-cont {
         grid-area: footer;
     }
-    .main-cont {
+    .main-article {
         grid-area: main;
     }
-    .main-inner-cont {
+    .main-cont {
         grid-area: mainli;
     }
     .sidebar {
@@ -128,14 +115,13 @@ main {
 
 @media (min-width: 992px) {
     .outer-container {
-        grid-template-columns: 100px 1fr 100px;
-        grid-template-rows: 100px auto 100px;
+        grid-template-columns: 30% 20% 20% 30%;
+        grid-template-rows: 20% 25% 50% 5%;
         grid-template-areas:
-            "logo nav tools"
-            "hero main ad"
-            "footer footer ad";
-        background-color: rgb(218, 177, 177);
-      
+            "logo nav nav tools"
+            "hero hero heroact ad"
+            "main mainli mainli sideb"
+            "footer footer footer footer"
     }
     .logo-cont {
         grid-area: logo;
@@ -158,10 +144,10 @@ main {
     .footer-cont {
         grid-area: footer;
     }
-    .main-cont {
+    .main-article {
         grid-area: main;
     }
-    .main-inner-cont {
+    .main-cont {
         grid-area: mainli;
     }
     .sidebar {
@@ -173,7 +159,6 @@ main {
     font-family: fantasy;
     font-size: 15px;
     padding-top: 0.1cm;
-   
 }
 .dreamteam-logo {
     width: 50px;
@@ -184,11 +169,6 @@ main {
 .search-bar {
     padding-top: 0.3cm;
     padding-right: 0.3cm;
-}
-
-.ul-navlist {
-    color: springgreen;
-    padding: 0;
 }
 
 .navlist{
