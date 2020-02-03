@@ -80,14 +80,12 @@
         }
     .logo-cont {
         grid-area: logo;
-       padding-left: 4cm;
     }
     .global-nav {
         grid-area: nav;
     }
     .header-tools {
         grid-area: tools;
-        justify-self: start;
     }
     .hero-cont {
         grid-area: hero;
@@ -97,21 +95,18 @@
     }
     .ad-cont {
         grid-area: ad;
-        padding-right: 3cm;
     }
     .footer-cont {
         grid-area: footer;
     }
     .main-article {
         grid-area: main;
-        padding-left: 4cm;
     }
     .main-cont {
         grid-area: mainli;
     }
     .sidebar {
         grid-area: sideb;
-        padding-left: 117px;
     }
 }
 
